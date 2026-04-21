@@ -1,0 +1,1562 @@
+[
+  {
+    "id": 1,
+    "question": "Welchen Sinn haben Schleifen in der Programmierung?",
+    "options": {
+      "A": "Sie ersetzen komplette Programme durch eine einzige Anweisung",
+      "B": "Sie dienen dazu, Anweisungen mehrfach auszuführen, ohne Code zu wiederholen",
+      "C": "Sie werden nur zur Fehlerbehandlung verwendet",
+      "D": "Sie speichern dauerhaft Daten im Speicher"
+    },
+    "correctAnswer": "B",
+    "explanation": "Schleifen ermöglichen es, bestimmte Codeabschnitte wiederholt auszuführen, ohne sie mehrfach schreiben zu müssen. Das macht Programme effizienter, kürzer und leichter wartbar."
+  },
+  {
+    "id": 2,
+    "question": "Wofür braucht man Schleifen in der Praxis?",
+    "options": {
+      "A": "Um Syntax-Fehler im Code zu finden",
+      "B": "Um Programme automatisch zu kompilieren",
+      "C": "Um z. B. Zahlenreihen auszugeben, Listen zu durchlaufen oder Berechnungen zu wiederholen",
+      "D": "Um Variablen im Karusselmodus dauerhaft zu wiederholen"
+    },
+    "correctAnswer": "C",
+    "explanation": "In der Praxis werden Schleifen überall dort eingesetzt, wo sich Aufgaben wiederholen. Dazu gehören das Arbeiten mit Listen, das wiederholte Abfragen von Eingaben oder das automatische Durchführen von Berechnungen."
+  },
+  {
+    "id": 3,
+    "question": "Ist eine Schleife ein Algorithmus?",
+    "options": {
+      "A": "Ja, weil Schleifen generell dazu lernen",
+      "B": "Nein, weil eine Schleife nur ein Baustein innerhalb eines Algorithmus ist",
+      "C": "Ja, weil Schleifen neue Informationen aufnehmen und integrieren",
+      "D": "Nein, weil Algorithmen nur aus mathematischen Formeln bestehen"
+    },
+    "correctAnswer": "B",
+    "explanation": "Eine Schleife ist nur ein Baustein innerhalb eines Algorithmus. Ein Algorithmus ist eine vollständige Schritt-für-Schritt-Lösung für ein Problem."
+  },
+  {
+    "id": 4,
+    "question": "Was bedeutet kopfgesteuerte Schleife?",
+    "options": {
+      "A": "Die Bedingung wird nach jeder Ausführung geprüft",
+      "B": "Die Schleife läuft immer genau einmal durch",
+      "C": "Die Bedingung wird vor der Ausführung geprüft",
+      "D": "Die Schleife wird nur bei Fehlern im Code gestartet"
+    },
+    "correctAnswer": "C",
+    "explanation": "Bei einer kopfgesteuerten Schleife wird die Bedingung vor dem Schleifenblock geprüft. Ist sie falsch, wird der Block nicht ausgeführt."
+  },
+  {
+    "id": 5,
+    "question": "Was bedeutet fußgesteuerte Schleife?",
+    "options": {
+      "A": "Die Schleife beginnt am Ende",
+      "B": "Die Schleife läuft nie vollständig durch",
+      "C": "Keine Bedingung wird verwendet",
+      "D": "Die Bedingung wird nach der Ausführung geprüft"
+    },
+    "correctAnswer": "D",
+    "explanation": "Bei einer fußgesteuerten Schleife wird die Bedingung erst nach dem Durchlauf geprüft, daher wird der Block mindestens einmal ausgeführt."
+  },
+  {
+    "id": 6,
+    "question": "Was ist eine Zählschleife?",
+    "options": {
+      "A": "Eine endlose Schleife",
+      "B": "Nur für Zahlenarten",
+      "C": "Eine Schleife mit festem Zähler, die genau weiß, wie oft sie läuft",
+      "D": "Nur für mathematische Rechnungen"
+    },
+    "correctAnswer": "C",
+    "explanation": "Eine Zählschleife arbeitet mit einem festen Zähler und hat eine vorher bekannte Anzahl an Durchläufen."
+  },
+  {
+    "id": 7,
+    "question": "Welche dieser Schleifen ist kopfgesteuert?",
+    "options": {
+      "A": "do-while und do-later",
+      "B": "for, while und for each",
+      "C": "nur do-while ist kopfgesteuert",
+      "D": "keine Schleife"
+    },
+    "correctAnswer": "B",
+    "explanation": "Kopfgesteuerte Schleifen prüfen die Bedingung vor dem Schleifenblock, z. B. for und while."
+  },
+  {
+    "id": 8,
+    "question": "Welche Schleifen sind fußgesteuert?",
+    "options": {
+      "A": "for",
+      "B": "while",
+      "C": "do-while",
+      "D": "foreach"
+    },
+    "correctAnswer": "C",
+    "explanation": "Fußgesteuerte Schleifen prüfen die Bedingung nach dem Block. In Java ist das do-while."
+  },
+  {
+    "id": 9,
+    "question": "Welche Programmierlogik steht hinter Schleifen?",
+    "options": {
+      "A": "Auswahl",
+      "B": "Wiederholung",
+      "C": "Speicherung",
+      "D": "Ausgabe"
+    },
+    "correctAnswer": "B",
+    "explanation": "Schleifen basieren auf der Wiederholungslogik (Iteration)."
+  },
+  {
+"id": 10,
+"question": "Wie sieht eine Initialisierung aus?",
+"options": {
+"A": "int x;",
+"B": "x = 5;",
+"C": "int x = 5;",
+"D": "= int x 5"
+},
+"correctAnswer": "C",
+"explanation": "Eine Initialisierung bedeutet, dass eine Variable in einem Schritt angelegt und gleichzeitig mit einem Wert versehen wird. Deshalb besteht sie immer aus drei Teilen: Datentyp, Variablenname und Wert, verbunden durch das Gleichheitszeichen und abgeschlossen mit einem Semikolon: int x = 5;. Das Semikolon ist in Java zwingend notwendig, weil es das Ende einer Anweisung markiert – ohne Semikolon weiß Java nicht, wo der Befehl endet. Der Wert muss dabei nicht unbedingt eine Zahl sein, sondern hängt vom Datentyp ab: bei int ganze Zahlen, bei double Kommazahlen, bei boolean true/false, bei String Text und bei char einzelne Zeichen. Wichtig ist also: Der Wert muss zum Datentyp passen, und jede Initialisierung ist immer eine vollständige, abgeschlossene Anweisung."
+},
+{
+"id": 11,
+"question": "Welches aus der Auswahl ist eine korrekte Deklaration?",
+"options": {
+"A": "int x;",
+"B": "int x = 5;",
+"C": "x = 5;",
+"D": "5 = x"
+},
+"correctAnswer": "A",
+"explanation": "Eine Deklaration bedeutet, dass eine Variable nur angelegt wird, aber noch keinen Wert bekommt. Sie besteht deshalb ausschließlich aus Datentyp und Variablenname, also z. B. int x;. Das Semikolon ist notwendig, weil es in Java jede Anweisung abschließt und dem Compiler zeigt, dass der Befehl hier endet. Im Gegensatz zur Initialisierung steht hier noch kein Wert, weil die Variable zwar existiert, aber noch „leer“ ist. Ein Wert wird erst später durch eine Zuweisung oder direkt bei der Initialisierung vergeben. Wichtig ist außerdem: Der Datentyp (hier int) legt fest, welche Art von Daten später gespeichert werden dürfen, zum Beispiel ganze Zahlen."
+},
+{
+"id": 12,
+"question": "Wie wird der Wert einer Variable in Java gelesen?",
+"options": {
+"A": "vom Code zur Klasse",
+"B": "vom Datentyp zum Namen",
+"C": "vom Speicher zur Verwendung im Programm",
+"D": "von der Methode zur Ausgabe"
+},
+"correctAnswer": "C",
+"explanation": "Eine Variable ist wie ein kleiner Speicherplatz im Computer, in dem ein Wert abgelegt wird (z. B. eine Zahl oder ein Text). Wenn dieser Wert im Programm benutzt wird, holt Java ihn aus diesem Speicher heraus und verwendet ihn weiter, zum Beispiel in einer Rechnung oder Ausgabe. Wichtig ist: Die Variable wird nicht „neu gelesen“ oder umgebaut, sondern der bereits gespeicherte Wert wird einfach abgerufen. Das passiert automatisch im Hintergrund, sobald die Variable in einem Ausdruck steht (z. B. x + 2). Dabei spielt die Leserichtung keine feste Rolle – entscheidend ist nur, dass der Wert aus dem Speicher genommen und im Programm verwendet wird."
+},
+{
+"id": 13,
+"question": "Welches aus der Auswahl ist eine korrekte Variable?",
+"options": {
+"A": "int 5x;",
+"B": "int x = 5;",
+"C": "x = int 5;",
+"D": "System.out.println(x);"
+},
+"correctAnswer": "B",
+"explanation": "Eine Variable ist ein Speicherplatz im Programm, der einen Wert enthält. Damit eine Variable korrekt ist, muss sie mindestens einen Datentyp (z. B. int) und einen Namen (z. B. x) haben und darf optional direkt einen Wert zugewiesen bekommen. In Java ist int x = 5; eine vollständige und korrekte Variable, weil hier gleichzeitig eine Variable vom Typ int erstellt und mit dem Wert 5 initialisiert wird. Die anderen Antworten sind falsch: int 5x; ist ungültig, weil Variablennamen nicht mit einer Zahl beginnen dürfen. x = int 5; ist syntaktisch falsch. System.out.println(x); ist keine Variable, sondern eine Ausgabe-Anweisung."
+},
+{
+"id": 14,
+"question": "Welche Bausteine muss eine Variable aufweisen?",
+"options": {
+"A": "Zuweisungsoperator und Wert",
+"B": "Datentyp und Name",
+"C": "Bezeichnung und Semikolon",
+"D": "Klasse und Methode"
+},
+"correctAnswer": "B",
+"explanation": "Eine Variable benötigt mindestens einen Datentyp und einen Namen."
+},
+{
+  "id": 15,
+  "question": "Was aus der folgenden Auswahl ist keine Variable?",
+  "options": {
+    "A": "int x = 10;",
+    "B": "double preis = 3.99;",
+    "C": "String name = \"Frank\";",
+    "D": "System.out.println(x);"
+  },
+  "correctAnswer": "D",
+  "explanation": "Eine Variable ist ein benannter Speicherplatz, in dem ein Wert gespeichert wird. Dazu gehören immer eine Deklaration (Datentyp + Name) und oft direkt eine Initialisierung (Wertzuweisung), wie bei int x = 10;, double preis = 3.99; oder String name = \"Frank\";. System.out.println(x); ist dagegen keine Variable, sondern eine Anweisung zur Ausgabe. Damit wird der Wert einer Variable nur auf der Konsole angezeigt, aber keine neue Variable erstellt oder gespeichert."
+},
+{
+"id": 16,
+"question": "Was aus der folgenden Auswahl ist eine Deklaration?",
+"options": {
+"A": "int x = 5;",
+"B": "int x;",
+"C": "x = 5",
+"D": "5 = x"
+},
+"correctAnswer": "B",
+"explanation": "Eine Deklaration bedeutet, dass eine Variable im Programm nur angelegt wird, aber noch keinen Wert bekommt. Dafür braucht man in Java nur den Datentyp (z. B. int, String), der festlegt, welche Art von Daten gespeichert werden dürfen, und den Variablennamen. Der Wert fehlt hier noch bewusst, weil die Variable erst einmal nur reserviert wird. Erst später kann ihr durch eine Zuweisung oder Initialisierung ein Wert gegeben werden. Das Semikolon am Ende ist wichtig, weil es jede Anweisung in Java abschließt."
+},
+{
+"id": 17,
+"question": "Was aus der folgenden Auswahl ist eine Initialisierung?",
+"options": {
+"A": "int x",
+"B": "x = 5;",
+"C": "int x = 5;",
+"D": "x int 5"
+},
+"correctAnswer": "C",
+"explanation": "Eine Initialisierung bedeutet, dass eine Variable direkt beim Erstellen einen Wert bekommt. Sie besteht deshalb aus Datentyp, Variablenname und Wert in einem Schritt. In Java ist das wichtig, weil die Variable damit sofort einsatzbereit ist. Im Gegensatz dazu ist int x; nur eine Deklaration (ohne Wert) und x = 5; nur eine Zuweisung (Wert wird einer bereits existierenden Variable gegeben). Eine Initialisierung verbindet beide Schritte in einer einzigen Anweisung."
+},
+{
+"id": 18,
+"question": "Wie ist eine Initialisierung aufgebaut?",
+"options": {
+"A": "Name + Typ + Wert",
+"B": "Typ + Name + Wert",
+"C": "Variable + Wert + Semikolon",
+"D": "Klasse + Methode + Wert"
+},
+"correctAnswer": "B",
+"explanation": "Eine Initialisierung bedeutet, dass eine Variable direkt beim Erstellen einen Wert bekommt. Dafür ist in Java eine feste Reihenfolge vorgeschrieben: zuerst der Datentyp, dann der Variablenname und anschließend der Wert. Der Computer muss diese Reihenfolge kennen, damit er die Variable richtig anlegen und den passenden Speicherplatz reservieren kann. Beispiel: int alter = 18;"
+},
+{
+"id": 19,
+"question": "Welche Datentypen aus der Auswahl gibt es?",
+"options": {
+"A": "int, double, boolean, char, String",
+"B": "while, for, if, else",
+"C": "class, method, object, system",
+"D": "add, get, set, remove"
+},
+"correctAnswer": "A",
+"explanation": "Datentypen legen in Java fest, welche Art von Wert eine Variable speichern kann. Sie bestimmen also, ob es sich um eine ganze Zahl, eine Kommazahl, einen Wahrheitswert, ein einzelnes Zeichen oder einen Text handelt.\nDie wichtigsten Datentypen sind:\n • int → ganze Zahlen (z. B. 5, 10, -3)\n • double → Kommazahlen (z. B. 3.14, 2.5)\n • boolean → nur true oder false\n • char → ein einzelnes Zeichen (z. B. 'A')\n • String → eine Zeichenkette (z. B. \"Hallo\")"
+},
+{
+"id": 20,
+"question": "Was aus der folgenden Auswahl ist kein Datentyp?",
+"options": {
+"A": "int",
+"B": "double",
+"C": "System",
+"D": "boolean"
+},
+"correctAnswer": "C",
+"explanation": "System ist eine Klasse."
+},
+{
+"id": 21,
+"question": "Wie ist eine Methode aufgebaut?",
+"options": {
+"A": "Typ + Name + Parameter + Block",
+"B": "Die Methode erkennt man immer an “main”",
+"C": "Wert + Typ + Zuweisung",
+"D": "Die Methode beginnt immer am ersten Zuweisungsoperator"
+},
+"correctAnswer": "A",
+"explanation": "Eine Methode in Java ist ein Codeblock, der eine bestimmte Aufgabe ausführt. Sie ist immer nach einem festen Muster aufgebaut, damit der Computer weiß, was die Methode machen soll, wie sie heißt und welche Eingaben sie bekommen kann.\nAm Anfang steht der Rückgabetyp (z. B. void,int, String). Er sagt aus, ob die Methode etwas zurückgibt oder nicht. Danach folgt der Name der Methode, der beschreibt, was sie macht. Anschließend kommen in runden Klammern die Parameter, also Werte, die die Methode von außen bekommen kann. Zum Schluss steht der Methodenblock in geschweiften Klammern, in dem der eigentliche Code ausgeführt wird.\nZB: public int addiere(int a, int b) {\nint ergebnis = a + b;\nreturn ergebnis;\n}"
+},
+{
+"id": 22,
+"question": "Was aus der folgenden Auswahl ist eine Methode?",
+"options": {
+"A": "System.out.println(x);",
+"B": "public static void main(String[] args)",
+"C": "int x = 5;",
+"D": "Scanner sc = new Scanner(System.in);"
+},
+"correctAnswer": "B",
+"explanation": "Eine Methode erkennt man daran, dass sie einen Rückgabetyp, einen Namen und runde Klammern () hat. In den Klammern können Parameter stehen.\npublic static void main(String[] args) ist eine Methode, weil sie genau diesen Aufbau hat und der Startpunkt eines Java-Programms ist.\nDie eckigen Klammern [] gehören hier nicht zur Methode selbst, sondern zum Datentyp der Parameter."
+},
+{
+"id": 23,
+"question": "Was aus dieser Auflistung ist keine Methode?",
+"options": {
+"A": "System.out.println(\"Hallo\");",
+"B": "public static void main(String[] args)",
+"C": "void start()",
+"D": "int add(int a, int b)"
+},
+"correctAnswer": "A",
+"explanation": "Eine Methode ist ein Codeblock mit Namen und runden Klammern (), der eine bestimmte Aufgabe ausführt. Du erkennst eine Methodendefinition typischerweise an folgenden Merkmalen:\n • Sie hat einen Rückgabetyp (z. B. void, int)\n • Sie hat einen Namen (z. B. start, add)\n • Sie besitzt runde Klammern (), in denen Parameter stehen können\n • Optional können Zugriffsmodifizierer davor stehen (z. B. public, private, static)"
+},
+{
+"id": 24,
+"question": "Welches aus der folgenden Auswahl ist der Startpunkt eines Programms?",
+"options": {
+"A": "Klasse",
+"B": "Variable",
+"C": "main-Methode",
+"D": "Objekt"
+},
+"correctAnswer": "C",
+"explanation": "Java startet immer in der main-Methode."
+},
+{
+"id": 25,
+"question": "Wo muss ein Scanner eingefügt werden, bevor man ihn benutzen kann?",
+"options": {
+"A": "direkt vor der Main-Methode",
+"B": "Als Import ganz oben in der Datei außerhalb der Klasse",
+"C": "immer bevor eine Eingabe von der Konsole stattfindet",
+"D": "er wird nach der Initialisierung importiert"
+},
+"correctAnswer": "B",
+"explanation": "Bevor der Scannerin Java verwendet werden kann, muss er zuerst importiert werden. Das bedeutet, Java wird darüber informiert, dass die Scanner-Klasse aus der Bibliothek java.util benutzt werden soll. Der import steht über der Klasse, aber nicht “im Sinne von innerhalb der Klasse”, sondern außerhalb davon in der Datei. Imports stehen ganz oben in der Datei, die Klasse darunter beginnt den eigentlichen Programmcode."
+},
+{
+"id": 26,
+"question": "Welches aus der folgenden Auswahl ist der korrekte Import des Scanners?",
+"options": {
+"A": "import Scanner.java;",
+"B": "import java.util.Scanner;",
+"C": "Scanner import util.java;",
+"D": "java.import.util Scanner;"
+},
+"correctAnswer": "B",
+"explanation": " • import sagt Java, dass eine externe Klasse benutzt wird\n • java.util ist der Ordner (Package), in dem der Scanner liegt\n • Scanner ist die konkrete Klasse für Eingaben\nNur diese genaue Schreibweise funktioniert, weil Java sehr streng mit der Syntax ist."
+},
+{
+"id": 27,
+"question": "Welches aus der folgenden Auswahl ist der korrekte Befehl um den Scanner zu schließen?",
+"options": {
+"A": "close(sc);",
+"B": "sc.close();",
+"C": "close(sc);",
+"D": "close.sc();"
+},
+"correctAnswer": "B",
+"explanation": "In Java ist sc der Name der Scanner-Variable, also das Objekt, das für die Eingabe verwendet wird. Methoden wie close() werden in Java immer über ein Objekt aufgerufen, nicht als eigene Funktion.\n • sc → das Scanner-Objekt\n • .close() → die Methode, die dieses Objekt beendet\nDeshalb ist die richtige Schreibweise: sc.close();"
+},
+{
+"id": 28,
+"question": "Was ist ein Array?",
+"options": {
+"A": "eine Aufzählung von Zahlenwerten",
+"B": "eine Liste von Variablen",
+"C": "eine Sammlung gleichartiger Datentypen",
+"D": "ein Programm-Standard für Rechenaufgaben"
+},
+"correctAnswer": "C",
+"explanation": "Ein Array ist eine Datenstruktur, mit der du mehrere Werte des gleichen Datentyps unter einem gemeinsamen Namen speichern kannst. Das bedeutet: Alle Elemente in einem Array müssen vom gleichen Typ sein, z. B. nur int, nur String oder nur double. Wichtige Merkmale von Arrays: Fester Datentyp: Alle Elemente sind gleich (z. B. nur Zahlen oder nur Texte). Feste Größe: Die Länge eines Arrays wird beim Erstellen festgelegt und kann danach nicht mehr geändert werden. Indexzugriff: Jedes Element hat eine Position (Index), beginnend bei 0. Beispiel: zahlen[0] ist das erste Element."
+},
+{
+"id": 29,
+"question": "Welche Arten von Arrays gibt es?",
+"options": {
+"A": "Zeichenketten- und Zahlenarrays",
+"B": "ein- und mehrdimensionale Arrays",
+"C": "Array und ArrayList",
+"D": "Unendliche Viele"
+},
+"correctAnswer": "B",
+"explanation": "Arrays in Java unterscheiden sich danach, wie viele Ebenen sie haben. Ein eindimensionales Array ist eine einfache Liste von Werten, z. B. mehrere Zahlen hintereinander. Ein mehrdimensionales Array besteht dagegen aus mehreren Listen in einer Struktur, also zum Beispiel einer Tabelle mit Zeilen und Spalten."
+},
+{
+"id": 30,
+"question": "Wie wird ein Array angelegt?",
+"options": {
+"A": "int[] a = new int[5];",
+"B": "new int = [] 5;",
+"C": "int 5 = new int[];",
+"D": "int new [5] = int [];"
+},
+"correctAnswer": "A",
+"explanation": "Ein Array wird in Java erstellt, indem man zuerst den Datentyp mit eckigen Klammern schreibt, dann den Namen der Variable und anschließend mit new ein neues Array mit einer bestimmten Größe erzeugt. Die Zahl in den eckigen Klammern gibt an, wie viele Werte im Array gespeichert werden können. int[] a = new int[5]; Hier wird ein Array namens a erstellt, das fünf ganze Zahlen (int) speichern kann. Die fünf Plätze werden automatisch angelegt, damit später Werte darin gespeichert werden können."
+},
+{
+"id": 31,
+"question": "Welche der folgenden Codezeilen legt kein Array an?",
+"options": {
+"A": "int[] zahlen = new int[5];",
+"B": "String[] namen = new String[3];",
+"C": "int zahl = 5;",
+"D": "double[] werte = new double[10];"
+},
+"correctAnswer": "C",
+"explanation": "Ein Array erkennt man an den eckigen Klammern [] beim Datentyp (z. B. int[]). Damit wird gespeichert, dass mehrere Werte eines Typs enthalten sind. Die Antwort C ist kein Array, sondern eine normale Variable, die nur einen einzelnen Wert speichert. Arrays werden oft mit new erstellt und haben eine feste Größe."
+},
+{
+"id": 32,
+"question": "Wie funktioniert die Logik in Arrays?",
+"options": {
+"A": "über Namen",
+"B": "über Indizes",
+"C": "über Zufall",
+"D": "über Methoden"
+},
+"correctAnswer": "B",
+"explanation": "Ein Array speichert mehrere Werte in einer festen Reihenfolge. Jeder Platz im Array hat eine Nummer, die man Index nennt. Über diesen Index kann das Programm genau auf einen bestimmten Wert zugreifen. Wichtig ist: In Java beginnt die Zählung immer bei 0, nicht bei 1."
+},
+{
+"id": 33,
+"question": "Wie greift man auf einen bestimmten Wert in einem Array zu?",
+"options": {
+"A": "mit runden Klammern ( )",
+"B": "mit einem Index in eckigen Klammern [ ]",
+"C": "über den Variablennamen des Wertes",
+"D": "über eine Methode ohne Klammern"
+},
+"correctAnswer": "B",
+"explanation": "Auf einen Wert in einem Array greift man zu, indem man hinter den Arraynamen einen Index in eckigen Klammern schreibt. Der Index gibt die Position des Wertes im Array an. Wichtig ist, dass die Zählung in Java bei 0 beginnt. Beispiel: int[] zahlen = {10, 20, 30}; zahlen[0] → 10; zahlen[1] → 20. So wählst du gezielt einen bestimmten Wert aus dem Array aus."
+},
+{
+"id": 34,
+"question": "Wie fügt man etwas in ein Array ein?",
+"options": {
+"A": "add() wert = ()",
+"B": "a[index] = wert",
+"C": "index[] = wert",
+"D": "a()index = name"
+},
+"correctAnswer": "B",
+"explanation": "Ein Array hat in Java eine feste Anzahl an Speicherplätzen. Diese Plätze sind über Indizes (Positionen) nummeriert, z. B. 0, 1, 2 usw. Um einen Wert in ein Array einzufügen, greift man direkt auf eine bestimmte Position zu und speichert dort den Wert ab. Es entsteht kein neuer Platz, etwas wird überschrieben oder befüllt. a = das Array (Name), [index] = die Position im Array, = = Zuweisung, wert = das, was gespeichert wird."
+},
+{
+"id": 35,
+"question": "Welches aus der Aufzählung ist keine ArrayList?",
+"options": {
+"A": "ArrayList<String> liste = new ArrayList<>();",
+"B": "ArrayList<Integer> zahlen = new ArrayList<>();",
+"C": "ArrayList<Double> werte = new ArrayList<>();",
+"D": "int[] zahlen = new int[5];"
+},
+"correctAnswer": "D",
+"explanation": "Eine ArrayList ist eine spezielle Datenstruktur in Java, die mit ArrayList<Datentyp> geschrieben wird und ihre Größe flexibel verändern kann. Die Antworten A, B und C sind echte ArrayLists, weil sie alle die Klasse ArrayList verwenden. Die Antwort D ist kein ArrayList, sondern ein Array. Man erkennt das daran, dass [] verwendet wird, new int[5] eine feste Größe angibt und keine ArrayList-Struktur benutzt wird."
+},
+{
+"id": 36,
+"question": "Was beschreibt ein String in Java am besten?",
+"options": {
+"A": "Ein einzelnes Zeichen",
+"B": "Eine Zahl mit Dezimalstellen",
+"C": "Eine Zeichenkette (Text aus mehreren Zeichen)",
+"D": "Eine Rechenoperation"
+},
+"correctAnswer": "C",
+"explanation": "Ein String speichert Text, also eine Folge von Zeichen, z. B. Wörter oder ganze Sätze wie \"Hallo Welt\". Deshalb wird er oft für Namen, Texte oder Eingaben vom Benutzer verwendet. Es ist immer notwendig, den Text mit Anführungszeichen einzufassen."
+},
+{
+"id": 37,
+"question": "Welches sind numerische Datentypen?",
+"options": {
+"A": "int, double, float",
+"B": "String, char, boolean",
+"C": "System, Scanner, Class",
+"D": "void, main, class"
+},
+"correctAnswer": "A",
+"explanation": "z. B. int x = 5; double y = 3.2; float z = 1.5f;"
+},
+{
+"id": 38,
+"question": "Welches aus der folgenden Auswahl ist der Zuweisungsoperator?",
+"options": {
+"A": "==",
+"B": "=",
+"C": "!=",
+"D": "+"
+},
+"correctAnswer": "B",
+"explanation": "= weist Werte zu. Der Zuweisungsoperator = wird in Java verwendet, um einer Variablen einen konkreten Wert zuzuweisen. Dabei wird der Wert auf der rechten Seite in die Variable auf der linken Seite gespeichert. int x = 5; x ist die Variable (Speicherplatz), 5 ist der Wert, = sorgt dafür, dass der Wert in die Variable geschrieben wird."
+},
+{
+"id": 39,
+"question": "Welches aus der folgenden Auswahl ist kein Datentyp?",
+"options": {
+"A": "int",
+"B": "double",
+"C": "System",
+"D": "boolean"
+},
+"correctAnswer": "C",
+"explanation": "Bei \"System\" handelt es sich um eine Klasse."
+},
+{
+"id": 40,
+"question": "Womit kann man in Java Eingaben aus der Konsole speichern?",
+"options": {
+"A": "In einem korrekt eingefügten Array.",
+"B": "Durch die Auswahl der richtigen Method.",
+"C": "Die Eingabe über die Tastatur wird in der Class festgelegt.",
+"D": "Durch den Import des Scanner kann man Tastatureingaben speichern."
+},
+"correctAnswer": "D",
+"explanation": "Scanner liest Eingaben."
+},
+{
+"id": 41,
+"question": "Welches Zeichen für Kommentare in Java ist falsch?",
+"options": {
+"A": "//",
+"B": "/* /",
+"C": "/#/",
+"D": "/* /"
+},
+"correctAnswer": "C",
+"explanation": "In Java ist // ein gültiger einzeiliger Kommentar. Mehrzeilige Kommentare werden mit / ... / geschrieben. /* ... */ ist ein Javadoc-Kommentar (Spezialfall, auch gültig)."
+},
+{
+"id": 42,
+"question": "Wo in der Auswahl wurde die Variable “alter” deklariert mit passendem Datentypen?",
+"options": {
+"A": "alter[] = int;",
+"B": "int alter;",
+"C": "alter = int;",
+"D": "alter() = int;"
+},
+"correctAnswer": "B",
+"explanation": "Eine Deklaration bedeutet, dass eine Variable im Programm angelegt wird, indem man zuerst den Datentyp und dann den Variablennamen angibt. Auch eine Deklaration braucht ein Semikolon, weil jede einzelne Java-Anweisung mit ; abgeschlossen wird. = kommt erst dazu, wenn ein Wert gespeichert wird."
+},
+{
+"id": 43,
+"question": "Beschreiben Sie kurz den Zweck einer sinnvoll benannten Variable und geben Sie ein Beispiel an.",
+"options": {
+"A": "Variablen sollten immer nach der Methode benannt werden, damit man weiß, in welchem Projekt man arbeitet. Int Main = 10;",
+"B": "Variablen sollten Namen haben, die beschreiben, wofür sie sind. So weiß man selbst und andere, worum es im Code geht. int alter = 25;",
+"C": "Variablen sollten im Code immer Alphabetisch benannt werden, damit man sich orientieren kann. int a = 10; int b = 20;",
+"D": "Variablen kann man so nennen wie man möchte. int Kaffeepause = 10;"
+},
+"correctAnswer": "B",
+"explanation": "Sinnvoll benannte Variablen machen den Code leichter verständlich und wartbar. Ein Name wie alter zeigt direkt, welche Information gespeichert wird. Dadurch können sowohl Entwickler selbst als auch andere den Code schneller verstehen, ohne zusätzliche Kommentare lesen zu müssen. Unklare Namen wie x1 oder rein technische Benennungen erschweren hingegen die Lesbarkeit."
+},
+{
+"id": 44,
+"question": "Welche Variable ist sowohl syntaktisch korrekt als auch geeignet für ein Gewicht mit Dezimalstellen?",
+"options": {
+"A": "int gesamtGewicht = 50;",
+"B": "double gesamtGewicht = 50.0;",
+"C": "String gesamtGewicht = \"50.0\";",
+"D": "float gesamtGewicht = \"50\";"
+},
+"correctAnswer": "B",
+"explanation": "In Java besteht eine Variablendeklaration aus vier Teilen: zuerst der Datentyp (z. B. double für Kommazahlen), dann der Variablenname (gesamtGewicht), danach das Gleichheitszeichen als Zuweisung und schließlich der Wert (50.0). Am Ende steht immer ein Semikolon. double gesamtGewicht = 50.0; speichert eine Kommazahl korrekt. int kann nur ganze Zahlen speichern, String speichert Text, und float ist zwar für Kommazahlen geeignet, hier aber mit falscher Zuweisung dargestellt."
+},
+{
+"id": 45,
+"question": "Welche Methoden nutzt man zum Füllen und Herausholen von Werten aus einer ArrayList ?",
+"options": {
+"A": "add() und get()",
+"B": "start() und stop()",
+"C": "open() und close()",
+"D": "read() und write()"
+},
+"correctAnswer": "A",
+"explanation": "ArrayList nutzt add() zum Einfügen von Elementen und get() zum Abrufen von Elementen."
+},
+{
+"id": 46,
+"question": "Welches ist keine Entwicklungsumgebung?",
+"options": {
+"A": "Eclipse",
+"B": "IntelliJ",
+"C": "Word",
+"D": "NetBeans"
+},
+"correctAnswer": "C",
+"explanation": "Word ist keine IDE (Entwicklungsumgebung), sondern ein Textverarbeitungsprogramm."
+},
+{
+  "id": 47,
+  "question": "Nach der Eingabe von Vorname und Nachname in der Konsole soll beides wie folgt wieder ausgegeben werden: Moin [Vorname] [Nachname] !!!",
+  "options": {
+    "A": "System.out.println(\"Moin Name\");",
+    "B": "System.out.println(\"Moin \" + vorname + \" \" + nachname + \" !!!\");",
+    "C": "print(vorname);",
+    "D": "echo name"
+  },
+  "correctAnswer": "B",
+  "explanation": "Strings werden in Java mit dem + Operator verbunden, um Variablen und Text zusammen auszugeben."
+},
+{
+"id": 48,
+"question": "Mit welcher Zeile Beispiel-Code können Sie den letzten Index eines beliebigen Arrays auf der Konsole ausgeben?",
+"options": {
+"A": "array.length",
+"B": "array[array.length]",
+"C": "array[array.length - 1]",
+"D": "array.last()"
+},
+"correctAnswer": "C",
+"explanation": "Der letzte gültige Index eines Arrays ist immer length - 1, da Arrays in Java bei 0 beginnen."
+},
+{
+"id": 49,
+"question": "Was ist eine ArrayList?",
+"options": {
+"A": "Eine feste Speicherstruktur wie ein Array",
+"B": "Eine dynamische Liste, die mehrere Werte speichern kann und sich automatisch vergrößert",
+"C": "Eine einzelne Variable für Zahlen",
+"D": "Eine Schleife zur Wiederholung"
+},
+"correctAnswer": "B",
+"explanation": "Eine ArrayList ist eine dynamische Datenstruktur in Java, die ihre Größe automatisch anpassen kann."
+},
+{
+"id": 50,
+"question": "Welche Codezeilen benötigt eine ArrayList?",
+"options": {
+"A": "import java.util.ArrayList; und ArrayList<Type> list = new ArrayList<>();",
+"B": "import ArrayList; und list = new ArrayList;",
+"C": "new list ArrayList();",
+"D": "ArrayList.start();"
+},
+"correctAnswer": "A",
+"explanation": "Die ArrayList muss aus java.util importiert werden. Danach wird sie mit Generics deklariert und mit new ArrayList<>() instanziiert."
+},
+{
+"id": 51,
+"question": "Was aus der folgenden Auswahl gehört nicht in eine ArrayList?",
+"options": {
+"A": "list.add(\"Hallo\");",
+"B": "list.get(0);",
+"C": "list[0];",
+"D": "list.remove(0);"
+},
+"correctAnswer": "C",
+"explanation": "ArrayList-Elemente werden über Methoden wie get(), add() oder remove() angesprochen und nicht mit eckigen Klammern wie bei Arrays."
+},
+{
+"id": 52,
+"question": "Welche Operatoren gibt es in Java?",
+"options": {
+"A": "Rechenoperatoren (+, - , ), Textoperatoren (\"+\"), und Klassenoperatoren (new, class)",
+"B": "Rechen- (+, -), Vergleichs- (==, !=), logische (&&, ||) und Zuweisungsoperatoren (=, +=)",
+"C": "Vergleichsoperatoren (==, !=), Schleifenoperatoren (for, while) und Methodenoperatoren (call())",
+"D": "Rechenoperatoren (+, -), Zugriffoperatoren (.), und Paketoperatoren (import)"
+},
+"correctAnswer": "B",
+"explanation": "Java unterscheidet mehrere Operatorarten, darunter Rechenoperatoren, Vergleichsoperatoren, logische Operatoren und Zuweisungsoperatoren."
+},
+{
+"id": 53,
+"question": "Was aus der folgenden Auswahl ist kein Operator?",
+"options": {
+"A": "+",
+"B": "==",
+"C": "int",
+"D": "&&"
+},
+"correctAnswer": "C",
+"explanation": "int ist ein Datentyp und kein Operator. Operatoren führen Berechnungen oder Vergleiche aus."
+},
+{
+"id": 54,
+"question": "Was ist ein Inkrement?",
+"options": {
+"A": "Wert wird halbiert",
+"B": "Wert wird um 1 erhöht",
+"C": "Wert wird gelöscht",
+"D": "Wert wird verglichen"
+},
+"correctAnswer": "B",
+"explanation": "Ein Inkrement erhöht den Wert einer Variable um 1, meist mit ++ (z. B. x++)."
+},
+{
+"id": 55,
+"question": "Was ist ein Dekrement?",
+"options": {
+"A": "Wert wird um 1 verringert (x--)",
+"B": "Wert wird verdoppelt (x = x * 2)",
+"C": "Wert wird gelöscht",
+"D": "Wert wird gespeichert"
+},
+"correctAnswer": "A",
+"explanation": "Ein Dekrement verringert den Wert einer Variable um 1 mit dem Operator -- (z. B. x--)."
+},
+{
+"id": 56,
+"question": "Was ist ein Vorzeichenoperator?",
+"options": {
+"A": "Operator, der zwei Werte addiert (x + y)",
+"B": "Operator, der das Vorzeichen eines Wertes festlegt oder ändert (+x, -x)",
+"C": "Operator für die Verarbeitung von Strings (\"Text\" + \"Text\")",
+"D": "Operator zur Steuerung von Schleifen (for, while)"
+},
+"correctAnswer": "B",
+"explanation": "Vorzeichenoperatoren bestimmen oder ändern das Vorzeichen eines Wertes, z. B. +x oder -x."
+},
+{
+"id": 57,
+"question": "Welches ist kein Rechenoperator?",
+"options": {
+"A": "+",
+"B": "-",
+"C": "!=",
+"D": "-"
+},
+"correctAnswer": "C",
+"explanation": "!= ist ein Vergleichsoperator und kein Rechenoperator."
+},
+{
+"id": 58,
+"question": "Was sind relationale Operatoren?",
+"options": {
+"A": "Operatoren für Berechnungen (+, -, , /)",
+"B": "Operatoren zur Steuerung von Schleifen (for, while)",
+"C": "Operatoren zum Vergleichen von Werten (>, <, ==, !=, >=, <=)",
+"D": "Operatoren für die Verarbeitung von Texten (+ bei Strings)"
+},
+"correctAnswer": "C",
+"explanation": "Relationale Operatoren werden verwendet, um zwei Werte miteinander zu vergleichen. Das Ergebnis ist immer ein boolescher Wert (true oder false). Sie kommen häufig in Bedingungen wie if-Abfragen oder Schleifen vor. Beispiele sind == (gleich), != (ungleich), > (größer) oder <= (kleiner oder gleich)."
+},
+{
+"id": 59,
+"question": "Welches aus der folgenden Auswahl ist kein logischer Operator?",
+"options": {
+"A": "&&",
+"B": "||",
+"C": "!",
+"D": "+"
+},
+"correctAnswer": "D",
+"explanation": "+ ist ein Rechenoperator und kein logischer Operator."
+},
+{
+"id": 60,
+"question": "Welcher der folgenden Operatoren bedeutet „nicht“?",
+"options": {
+"A": "&&",
+"B": "||",
+"C": "!",
+"D": "=="
+},
+"correctAnswer": "C",
+"explanation": "Der Operator ! ist der logische NOT-Operator und kehrt einen booleschen Wert um. Aus true wird false und umgekehrt. Beispiel: !true ergibt false. Er wird häufig in Bedingungen eingesetzt, um das Gegenteil einer Aussage zu prüfen."
+},
+{
+"id": 61,
+"question": "Welcher der folgenden Operatoren bedeutet „und“?",
+"options": {
+"A": "||",
+"B": "&&",
+"C": "!=",
+"D": "="
+},
+"correctAnswer": "B",
+"explanation": "&& bedeutet logisches UND. Beide Bedingungen müssen wahr sein, damit das Gesamtergebnis true ergibt."
+},
+{
+"id": 62,
+"question": "Welcher der folgenden Operatoren bedeutet „oder“?",
+"options": {
+"A": "&&",
+"B": "||",
+"C": "==",
+"D": "!"
+},
+"correctAnswer": "B",
+"explanation": "|| bedeutet logisches ODER. Eine der beiden Bedingungen reicht aus, damit das Ergebnis true ist."
+},
+{
+"id": 63,
+"question": "Welcher der folgenden Operatoren bedeutet „ungleich“?",
+"options": {
+"A": "==",
+"B": "!=",
+"C": "=",
+"D": "<="
+},
+"correctAnswer": "B",
+"explanation": "!= prüft, ob zwei Werte unterschiedlich sind."
+},
+{
+"id": 64,
+"question": "Welcher der folgenden Operatoren bedeutet „gleich“?",
+"options": {
+"A": "=",
+"B": "!=",
+"C": "==",
+"D": ">="
+},
+"correctAnswer": "C",
+"explanation": "== vergleicht zwei Werte auf Gleichheit."
+},
+{
+"id": 65,
+"question": "Was ist eine einfache Zuweisung?",
+"options": {
+"A": "Vergleich zweier Werte",
+"B": "Speicherung eines Wertes in einer Variable mit =",
+"C": "Addition zweier Zahlen",
+"D": "Schleifensteuerung"
+},
+"correctAnswer": "B",
+"explanation": "Mit = wird einer Variablen ein Wert zugewiesen."
+},
+{
+"id": 66,
+"question": "Welches aus der folgenden Liste ist keine kombinierte Zuweisung?",
+"options": {
+"A": "+= (z. B. x += 5 → entspricht x = x + 5)",
+"B": "-= (z. B. x -= 3 → entspricht x = x - 3)",
+"C": "= (z. B. x *= 2 → entspricht x = x * 2)",
+"D": "== (prüft, ob zwei Werte gleich sind)"
+},
+"correctAnswer": "D",
+"explanation": "Kombinierte Zuweisungen verbinden eine Rechenoperation mit einer Zuweisung, z. B. +=, -= oder *=. Dabei wird ein Wert berechnet und direkt gespeichert. Der Operator == ist keine Zuweisung, sondern ein Vergleichsoperator, der prüft, ob zwei Werte gleich sind."
+},
+{
+"id": 67,
+"question": "Was ist in einer Variable ein Bezeichner?",
+"options": {
+"A": "der gespeicherte Wert (z. B. 5 oder \"Hallo\")",
+"B": "der Datentyp (z. B. int, String)",
+"C": "der Name der Variable (z. B. alter, name)",
+"D": "der Operator (z. B. +, =)"
+},
+"correctAnswer": "C",
+"explanation": "Der Bezeichner ist der Name einer Variable, über den man im Programm auf sie zugreifen kann. Er wird vom Programmierer selbst vergeben, z. B. int alter = 20; – hier ist alter der Bezeichner. Über diesen Namen kann der gespeicherte Wert gelesen oder verändert werden. Bezeichner müssen bestimmten Regeln folgen, z. B. dürfen sie nicht mit einer Zahl beginnen und keine reservierten Schlüsselwörter wie int oder class sein."
+},
+{
+"id": 68,
+"question": "Was muss in einer Variable mit einem Unicode-Buchstaben beginnen?",
+"options": {
+"A": "Datentyp (int, String)",
+"B": "Wert (10, \"Hallo\")",
+"C": "Bezeichner / Variablenname (z. B. name, zahl, äpfel)",
+"D": "Methode (main(), print())"
+},
+"correctAnswer": "C",
+"explanation": "Ein Unicode-Buchstabe ist ein Zeichen aus dem internationalen Zeichensatz, also nicht nur a–z, sondern auch z. B. ä, ö, ü oder Zeichen aus anderen Sprachen. In Java muss ein Variablenname (Bezeichner) mit einem Buchstaben, einem Unterstrich _ oder einem solchen Unicode-Zeichen beginnen, aber nicht mit einer Zahl. Beispiel: int größe = 10; ist erlaubt, int 1zahl = 10; dagegen nicht."
+},
+{
+"id": 69,
+"question": "Was ist ein Unicode-Buchstabe?",
+"options": {
+"A": "Unicode umfasst alle Zeichen der englischen Sprache",
+"B": "Unicode ist ein internationaler Zeichensatz (z. B. auch ä, ö, ü)",
+"C": "Im Unicode sind alle Symbole von Zahlencodes enthalten",
+"D": "Unicode ist wie ein Wörterbuch für Java Code"
+},
+"correctAnswer": "B",
+"explanation": "Unicode ist ein weltweit standardisierter Zeichensatz, der Texte aus nahezu allen Schriftsystemen digital darstellbar macht. Er umfasst über 100.000 Zeichen aus vielen Sprachen sowie Symbole und Emojis. Beispiele sind ä, кириллица, 汉字 oder 😊. Ziel von Unicode ist eine einheitliche Textdarstellung weltweit unabhängig von Sprache oder Plattform."
+},
+{
+"id": 70,
+"question": "Was ist ein Schlüsselwort im Java-Code?",
+"options": {
+"A": "selbst vergebene Variablenname",
+"B": "reserviertes Wort mit fester Bedeutung in Java",
+"C": "aufrufbare Methodenbezeichnungen",
+"D": "Triggerworte, wo das Programm startet"
+},
+"correctAnswer": "B",
+"explanation": "Schlüsselwörter (Keywords) sind reservierte Wörter in Java mit fester Bedeutung, die den Aufbau und das Verhalten eines Programms steuern und nicht als Variablennamen verwendet werden dürfen. Beispiele sind class, int, public oder if und else."
+},
+{
+"id": 71,
+"question": "Was bedeutet CamelCase?",
+"options": {
+"A": "CamelCase ist wie ASCII ein Zeichensystem",
+"B": "Wörter werden ohne Trennung geschrieben, jedes neue Wort beginnt groß",
+"C": "Entwickler mit Fehlern im Code sind Kamele (CamelCase)",
+"D": "In Java gibt es Dialekte, einer davon heißt CamelCase"
+},
+"correctAnswer": "B",
+"explanation": "CamelCase ist eine Schreibweise, bei der mehrere Wörter ohne Leerzeichen aneinandergereiht werden und jedes neue Wort mit einem Großbuchstaben beginnt. Sie wird genutzt, um Namen im Code besser lesbar zu machen."
+},
+{
+"id": 72,
+"question": "Wann muss CamelCase benutzt werden?",
+"options": {
+"A": "Immer, wenn man eine Klasse bestimmt",
+"B": "Bei Variablen- und Methodennamen",
+"C": "Wenn man im entsprechenden Java-Dialekt programmiert",
+"D": "Nur in Kommentaren"
+},
+"correctAnswer": "B",
+"explanation": "In Java wird CamelCase bei Variablen- und Methodennamen verwendet, um den Code lesbarer und einheitlicher zu gestalten. Besonders üblich ist lowerCamelCase wie vorName oder gesamtPreis. Es ist eine Konvention, keine zwingende technische Regel."
+},
+{
+"id": 73,
+"question": "Was ist eine Konstante in Java?",
+"options": {
+"A": "Eine Variable, deren Wert sich während der Programmausführung ändern kann",
+"B": "Eine Variable, deren Wert nach der ersten Zuweisung nicht mehr verändert werden darf",
+"C": "Eine Struktur zur wiederholten Ausführung von Code",
+"D": "Eine spezielle Methode zur Berechnung fester Werte"
+},
+"correctAnswer": "B",
+"explanation": "Eine Konstante in Java ist eine Variable, deren Wert nach der einmaligen Zuweisung nicht mehr verändert werden kann. Dafür wird das Schlüsselwort final verwendet. Sobald ein Wert gesetzt wurde, ist die Variable fest und kann im weiteren Programmverlauf nicht mehr überschrieben werden."
+},
+{
+"id": 74,
+"question": "Was muss in einer Variable groß geschrieben werden?",
+"options": {
+"A": "Der Datentyp",
+"B": "Variablenname immer",
+"C": "Konstanten (final Variablen)",
+"D": "die Methoden wird groß geschrieben"
+},
+"correctAnswer": "C",
+"explanation": "In Java werden nur Konstanten (mit final definierte, unveränderbare Variablen) komplett groß geschrieben, z. B. MAX_VALUE oder MIN_SIZE. Diese Schreibweise mit Großbuchstaben und Unterstrichen dient als Konvention, um feste Werte im Code klar erkennbar zu machen. Normale Variablen werden in lowerCamelCase geschrieben."
+},
+{
+"id": 75,
+"question": "Was ist eine Klasse?",
+"options": {
+"A": "Die Bezeichnung einer Variable",
+"B": "Ein Bauplan für Objekte",
+"C": "Klassen initialisieren Datentypen",
+"D": "Eine kopfgesteuerte Schleife"
+},
+"correctAnswer": "B",
+"explanation": "Eine Klasse ist in Java ein Bauplan für Objekte. Sie legt fest, welche Eigenschaften (Attribute) und Verhaltensweisen (Methoden) ein Objekt haben kann. Aus einer Klasse können beliebig viele Objekte erstellt werden, die diese Struktur verwenden, aber eigene Werte besitzen. Klassen sind ein zentrales Konzept der objektorientierten Programmierung."
+},
+{
+"id": 76,
+"question": "Welches aus der folgenden Auswahl ist keine Klasse?",
+"options": {
+"A": "String",
+"B": "Scanner",
+"C": "int",
+"D": "ArrayList"
+},
+"correctAnswer": "C",
+"explanation": "int ist ein primitiver Datentyp und keine Klasse. String, Scanner und ArrayList sind dagegen Klassen der Java-Standardbibliothek und bieten umfangreiche Funktionen über Methoden."
+},
+{
+"id": 77,
+"question": "Welche Bausteine gehören in eine Klasse?",
+"options": {
+"A": "die Variablen",
+"B": "Der Scanner und die Methoden",
+"C": "Variablen und Methoden",
+"D": "Dialektbenennung, Methode und Schleifen"
+},
+"correctAnswer": "C",
+"explanation": "Eine Klasse in Java besteht im Kern aus Attributen (Variablen) und Methoden. Die Attribute beschreiben den Zustand eines Objekts, also seine Eigenschaften. Die Methoden beschreiben das Verhalten eines Objekts. Zusammen bilden sie den Bauplan für Objekte. Konstruktoren können zusätzlich enthalten sein, gehören aber nicht zu den grundlegenden Bausteinen."
+},
+{
+"id": 78,
+"question": "Welches aus der folgenden Auswahl ist eine Deklaration?",
+"options": {
+"A": "Datentyp Variablenname = Wert;",
+"B": "Variablenname = 5;",
+"C": "int x;",
+"D": "8 = Variablenname;"
+},
+"correctAnswer": "C",
+"explanation": "Eine Deklaration legt eine Variable im Programm an, indem nur der Datentyp und der Variablenname angegeben werden. Es wird noch kein Wert zugewiesen. Beispiel: int x; Erst mit einer Zuweisung (int x = 5;) wird daraus eine Initialisierung."
+},
+{
+"id": 79,
+"question": "Welches aus der folgenden Auswahl ist eine Initialisierung?",
+"options": {
+"A": "Datentyp x;",
+"B": "int hausnummer = 70;",
+"C": "Variablenname = Wert;",
+"D": "5 int x"
+},
+"correctAnswer": "B",
+"explanation": "Eine Initialisierung bedeutet, dass eine Variable beim Erstellen direkt einen Wert erhält. Sie besteht aus Datentyp, Variablenname und Zuweisung eines Wertes. Beispiel: int x = 5; Dabei wird die Variable x angelegt und sofort mit dem Wert 5 belegt. \nint legt fest, dass nur ganze Zahlen gespeichert werden dürfen\nhausnummer ist der Name der Variable \n= weist der Variable einen Wert zu \n70 ist der gespeicherte Wert \n; beendet die Anweisung in Java "
+},
+{
+"id": 80,
+"question": "Woraus besteht eine Initialisierung?",
+"options": {
+"A": "Scanner, Klasse, Methode",
+"B": "Name, Wert, Semikolon",
+"C": "Datentyp, Name, Wert und Semikolon",
+"D": "Es handelt sich um Main, den Startpunkt des Programms"
+},
+"correctAnswer": "C",
+"explanation": "Eine Initialisierung besteht aus drei Teilen: dem Datentyp, dem Variablennamen und dem Wert. Diese werden mit dem Zuweisungsoperator = verbunden und durch ein Semikolon abgeschlossen. Beispiel: int alter = 18;"
+},
+{
+"id": 81,
+"question": "Wie liest man Zeichenketten von der Tastatur in die Konsole ein?",
+"options": {
+"A": "mit System.out.println",
+"B": "mit Arrays",
+"C": "mit Scanner und nextLine()",
+"D": "mit class input"
+},
+"correctAnswer": "C",
+"explanation": "Für Eingaben von der Tastatur verwendet man in Java die Klasse Scanner. Mit nextLine() kann eine komplette Textzeile eingelesen werden. Beispiel: Scanner sc = new Scanner(System.in); String name = sc.nextLine();"
+},
+{
+"id": 82,
+"question": "Wie funktioniert eine while-Schleife?",
+"options": {
+"A": "Sie wird genau einmal ausgeführt und stoppt dann automatisch",
+"B": "Sie läuft nur mit einer for-Schleife zusammen",
+"C": "Sie prüft zuerst eine Bedingung und wiederholt den Codeblock so lange, wie die Bedingung wahr ist",
+"D": "Sie funktioniert nur im Zusammenspiel mit einem Array"
+},
+"correctAnswer": "C",
+"explanation": "Die while-Schleife ist eine kopfgesteuerte Schleife. Sie prüft zuerst die Bedingung und führt den Codeblock so lange aus, wie diese true ist. Sobald die Bedingung false wird, stoppt die Schleife."
+},
+{
+"id": 83,
+"question": "Was ist Programmieren?",
+"options": {
+"A": "Die Eintragung von Einsen und Nullen",
+"B": "Das Bedienen von Programmen, anstatt Code zu schreiben",
+"C": "Das Erstellen von Anweisungen für einen Computer in einer Programmiersprache",
+"D": "Das Erstellen von Anweisungen für einen Computer in Unicode"
+},
+"correctAnswer": "C",
+"explanation": "Programmieren bedeutet, einem Computer Schritt für Schritt Anweisungen zu geben, damit er Aufgaben automatisch ausführen kann. Diese Anweisungen werden in einer Programmiersprache geschrieben."
+},
+{
+"id": 84,
+"question": "Was ist eine Programmiersprache?",
+"options": {
+"A": "Eine Sprache zur internationalen Verständigung zwischen Programmierern",
+"B": "Die Möglichkeit einer Audioeingabe am PC",
+"C": "Eine formale Sprache, mit der man mit einem Computer kommuniziert",
+"D": "Die Kommunikation zwischen Betriebssystem und User"
+},
+"correctAnswer": "C",
+"explanation": "Eine Programmiersprache ist eine formale Sprache mit festen Regeln (Syntax und Struktur), mit der Menschen Anweisungen für einen Computer schreiben können. Beispiele sind Java, Python oder C++."
+},
+{
+"id": 85,
+"question": "Erklären Sie Syntax und Semantik.",
+"options": {
+"A": "Syntax sind die Schreibregeln, Semantik ist die Bedeutung des Codes",
+"B": "Syntax ist die Bedeutung, Semantik umfasst die Schreibregeln",
+"C": "Syntax ist eine Steuer, welche an Microsoft abgeführt wird, Semantik ist das Bezahlsystem",
+"D": "Syntax beschreibt die Wiederholrate, Semantik liest den Takt"
+},
+"correctAnswer": "A",
+"explanation": "Syntax beschreibt die Schreibregeln und Struktur einer Programmiersprache. Semantik beschreibt die Bedeutung des Codes, also was er tatsächlich bewirkt. Syntax = wie Code geschrieben wird, Semantik = was der Code bedeutet."
+},
+{
+"id": 86,
+"question": "Wann entsteht eine Fehlermeldung?",
+"options": {
+"A": "Bei Semantikfehlern sofort beim Schreiben des Code, bei Syntaxfehlern merkt man es erst später",
+"B": "Eine Fehlermeldung entsteht in Arrays, wenn die Werteingabe inkongruent ist",
+"C": "Bei Syntaxfehlern sofort beim Schreiben oder Kompilieren, bei Semantikfehlern nicht immer sichtbar",
+"D": "Bei Syntaxfehlern, wenn der Wert keine Klasse enthält, bei Semantikfehlern, wenn x leer bleibt"
+},
+"correctAnswer": "C",
+"explanation": "Syntaxfehler entstehen durch falsche Schreibweise und werden meist sofort beim Kompilieren erkannt. Semantikfehler bedeuten, dass der Code zwar korrekt läuft, aber logisch falsch arbeitet und deshalb nicht immer sofort auffällt."
+},
+{
+"id": 87,
+"question": "Welches aus der Auswahl ist eine Klasse in Java?",
+"options": {
+"A": "int class = 2;",
+"B": "Scanner",
+"C": "main",
+"D": "nextLine()"
+},
+"correctAnswer": "B",
+"explanation": "Scanner ist eine echte Java-Klasse aus der Standardbibliothek (java.util). Sie wird verwendet, um Eingaben von der Tastatur zu lesen. int ist ein Datentyp, main ist eine Methode und nextLine() ist eine Methode."
+},
+{
+"id": 88,
+"question": "Was ist die main-Methode?",
+"options": {
+"A": "Die Hauptmethode zum Umgang mit Rechenoperationen",
+"B": "Der Startpunkt eines Java-Programms",
+"C": "Der Startpunkt der Variable",
+"D": "Der Startpunkt der Methode"
+},
+"correctAnswer": "B",
+"explanation": "Die main-Methode ist der feste Einstiegspunkt eines Java-Programms. Wenn ein Programm gestartet wird, beginnt die Ausführung immer dort."
+},
+{
+"id": 89,
+"question": "Was passiert beim Aufruf einer Methode in Java?",
+"options": {
+"A": "Der Code in der Methode speichert die Klasse",
+"B": "Der Code der Methode wird ausgeführt, wenn sie aufgerufen wird",
+"C": "Die Methode wird nur gespeichert und in der Variable initialisiert",
+"D": "Die Methode aktiviert den Compiler"
+},
+"correctAnswer": "B",
+"explanation": "Eine Methode in Java wird nicht automatisch ausgeführt, sondern nur dann, wenn sie aufgerufen wird. Dann springt der Programmfluss in die Methode, führt den Code aus und kehrt anschließend zurück."
+},
+{
+"id": 90,
+"question": "Was ist der Unterschied zwischen Frontend und Backend?",
+"options": {
+"A": "Frontend = Datenbank, Backend = sichtbare Benutzeroberfläche",
+"B": "Frontend = Logik für den User, Backend = Bestimmung des css",
+"C": "Frontend = sichtbare Benutzeroberfläche, Backend = Verarbeitung im Hintergrund",
+"D": "Frontend = Verarbeitung im Hintergrund, Backend = sichtbare Benutzeroberfläche"
+},
+"correctAnswer": "C",
+"explanation": "Frontend ist der sichtbare Teil einer Anwendung (Benutzeroberfläche wie Buttons, Texte, Design). Backend ist der unsichtbare Teil, der im Hintergrund Daten verarbeitet, Logik ausführt und oft mit Datenbanken arbeitet."
+},
+{
+"id": 91,
+"question": "Was bedeutet EVA?",
+"options": {
+"A": "Eingabe – Verarbeitung – Ausgabe",
+"B": "Entwicklung – Verarbeitung – Analyse",
+"C": "Eingabe – Verbindung – Ausgabe",
+"D": "Eingang – Verarbeitung – Anwendung"
+},
+"correctAnswer": "A",
+"explanation": "EVA beschreibt den grundlegenden Ablauf in Programmen: Eingabe von Daten, Verarbeitung dieser Daten und anschließende Ausgabe des Ergebnisses."
+},
+{
+"id": 92,
+"question": "Beispiel für EVA im Programm?",
+"options": {
+"A": "Benutzer bestimmt Methode, startet Programm und liest Fehler aus",
+"B": "Benutzer gibt Zahl ein, Programm verdoppelt sie und gibt Ergebnis aus",
+"C": "Benutzer wählt die EVA-Methode als Startpunkt des Programms und gibt Befehle an",
+"D": "Benutzer evaluiert die Anforderung, vergibt die Aufgabe und analysiert das Ergebnis"
+},
+"correctAnswer": "B",
+"explanation": "EVA steht für Eingabe, Verarbeitung und Ausgabe. Ein typisches Beispiel ist: Der Benutzer gibt eine Zahl ein, das Programm verarbeitet sie (z. B. verdoppeln) und gibt das Ergebnis aus."
+},
+{
+"id": 93,
+"question": "Wozu benutzt man Kommentare im Code?",
+"options": {
+"A": "Kommentare helfen der Search Engine den Code zu verstehen",
+"B": "Um der KI Anweisungen zu geben",
+"C": "Um Code für Menschen verständlicher zu machen, ohne dass er ausgeführt wird",
+"D": "Kommentare sind für die Performance-Bewertung relevant"
+},
+"correctAnswer": "C",
+"explanation": "Kommentare werden vom Compiler ignoriert und dienen nur dazu, den Code für Entwickler verständlicher zu machen."
+},
+{
+"id": 94,
+"question": "Welche Arten von Kommentaren gibt es in Java?",
+"options": {
+"A": "//, /* /, /* */",
+"B": "#, //, --",
+"C": "html, css, js",
+"D": "print, echo, log"
+},
+"correctAnswer": "A",
+"explanation": "In Java gibt es einzeilige Kommentare (//), mehrzeilige Kommentare (/ /) und JavaDoc-Kommentare (/* */), die zur Dokumentation genutzt werden."
+},
+{
+"id": 95,
+"question": "Welche der folgenden Auflistungen enthält wichtige Datentypen in Java?",
+"options": {
+"A": "loop, class, method, object",
+"B": "int, double, boolean, char, String",
+"C": "print, scan, run, execute",
+"D": "java, system, code, program"
+},
+"correctAnswer": "B",
+"explanation": "Datentypen legen fest, welche Art von Daten eine Variable speichern kann, z. B. int für ganze Zahlen, double für Kommazahlen, boolean für Wahrheitswerte, char für einzelne Zeichen und String für Texte."
+},
+{
+"id": 96,
+"question": "Was ist der Unterschied zwischen float und double in Java?",
+"options": {
+"A": "float kann größere Dezimalzahlen speichern als double",
+"B": "Beide sind gleich, außer dass float ein f braucht",
+"C": "double ist genauer und kann größere Dezimalzahlen speichern als float",
+"D": "float wird nur für ganze Zahlen verwendet"
+},
+"correctAnswer": "C",
+"explanation": "double bietet eine höhere Genauigkeit und einen größeren Wertebereich als float. Deshalb wird double in Java häufiger für Dezimalzahlen verwendet."
+},
+{
+"id": 97,
+"question": "Was muss man bei float in Java beachten?",
+"options": {
+"A": "Bei Dezimalzahlen muss ein f an den Wert angehängt werden",
+"B": "float kann nur ganze Zahlen speichern",
+"C": "Bei Variablen muss man auf float verzichten",
+"D": "Bei float muss immer auf eckige Klammern geachtet werden"
+},
+"correctAnswer": "A",
+"explanation": "Bei float muss ein f oder F an den Zahlenwert angehängt werden, da Java Dezimalzahlen standardmäßig als double interpretiert."
+},
+{
+"id": 98,
+"question": "Welche Werte kann boolean in Java annehmen?",
+"options": {
+"A": "true oder false",
+"B": "nur Zahlen wie 0 oder 1",
+"C": "beliebige Wörter als Text",
+"D": "nur den Wert 0"
+},
+"correctAnswer": "A",
+"explanation": "Der Datentyp boolean kann nur zwei Werte annehmen: true oder false. Er wird für logische Entscheidungen im Programm verwendet."
+},
+{
+"id": 99,
+"question": "Was ist der Unterschied zwischen char und String in Java?",
+"options": {
+"A": "char speichert mehrere Zeichen, String nur ein einzelnes",
+"B": "char speichert ein einzelnes Zeichen, String eine Folge mehrerer Zeichen",
+"C": "Beide sind gleich",
+"D": "char legt den Charakter einer Variable fest, String nicht"
+},
+"correctAnswer": "B",
+"explanation": "char speichert genau ein einzelnes Zeichen, während String eine Zeichenkette aus mehreren Zeichen speichert, z. B. Wörter oder Sätze."
+},
+{
+"id": 100,
+"question": "Warum benutzt String in Java doppelte Anführungszeichen?",
+"options": {
+"A": "Doppelte Anführungszeichen helfen beim Verständnis",
+"B": "Bei Zeichenketten ist das der Standard, während char nur ein einzelnes Zeichen speichert",
+"C": "weil das so ist",
+"D": "Da String ebenfalls eine Methode ist, zeigen die Anführungszeichen an, dass etwas anderes passiert"
+},
+"correctAnswer": "B",
+"explanation": "In Java werden Strings mit doppelten Anführungszeichen geschrieben, da sie mehrere Zeichen enthalten. char verwendet einfache Anführungszeichen für einzelne Zeichen."
+},
+{
+"id": 101,
+"question": "Was macht die Scanner-Klasse in Java?",
+"options": {
+"A": "erstellt automatisch neue Programme",
+"B": "liest Eingaben von der Konsole ein",
+"C": "löscht Variablen aus dem Speicher",
+"D": "Gibt Werte auf der Konsole aus"
+},
+"correctAnswer": "B",
+"explanation": "Die Scanner-Klasse wird verwendet, um Benutzereingaben von der Konsole zu lesen. Sie muss importiert und instanziiert werden, bevor sie genutzt werden kann."
+},
+{
+"id": 102,
+"question": "Wie wird ein Scanner in Java korrekt initialisiert?",
+"options": {
+"A": "Scanner sc = new Scanner(System.in);",
+"B": "Scanner sc = new Scanner(System.out);",
+"C": "Scanner sc = new System.Scanner(in);",
+"D": "Scanner sc = new Input();"
+},
+"correctAnswer": "A",
+"explanation": "Um in Java Eingaben von der Tastatur zu lesen, wird ein Scanner-Objekt erstellt. Dafür nutzt man die Klasse Scanner und verbindet sie mit System.in, der Standardeingabe (Tastatur). Scanner sc = new Scanner(System.in); erstellt ein Scanner-Objekt, das Eingaben lesen kann."
+},
+{
+"id": 103,
+"question": "Warum braucht man System.in in Java?",
+"options": {
+"A": "für Ausgaben in der Konsole",
+"B": "Damit man in das Programmsystem hineinschreiben kann",
+"C": "für Tastatureingaben",
+"D": "Dadurch wird die Verbindung zur Klasse hergestellt"
+},
+"correctAnswer": "C",
+"explanation": "System.in steht in Java für die Standardeingabe, also meist die Tastatur. Es wird verwendet, um Eingaben vom Benutzer in das Programm zu übertragen."
+},
+{
+"id": 104,
+"question": "Was macht nextLine() in Java?",
+"options": {
+"A": "liest eine einzelne Zahl ein",
+"B": "löscht bereits gespeicherte Eingaben",
+"C": "liest eine komplette Zeile als Text ein",
+"D": "beendet das Programm sofort"
+},
+"correctAnswer": "C",
+"explanation": "nextLine() liest eine komplette Zeile aus der Konsole ein und speichert sie als String. Dabei wird der gesamte Text bis zum Drücken der Enter-Taste übernommen."
+},
+{
+"id": 105,
+"question": "Was passiert mit einer Eingabe, wenn sie nicht in einer Variable gespeichert wird?",
+"options": {
+"A": "Sie wird automatisch in einer Datei gespeichert",
+"B": "Sie bleibt im Programm dauerhaft verfügbar",
+"C": "Sie geht nach dem Einlesen verloren und kann nicht weiter verwendet werden",
+"D": "Sie wird automatisch in ein Array übertragen"
+},
+"correctAnswer": "C",
+"explanation": "Wenn eine Eingabe nicht in einer Variable gespeichert wird, kann das Programm später nicht mehr darauf zugreifen. Der Wert geht nach dem Einlesen verloren."
+},
+{
+"id": 106,
+"question": "Warum verwendet man sc.close() in Java?",
+"options": {
+"A": "Mit sc.close() zeigt man Java, dass das Ende des Programs erreicht wurde",
+"B": "um den Scanner sauber zu schließen und Ressourcen freizugeben",
+"C": "um das import Objekt ArrayList sauber zu schlieeßn",
+"D": "sc.close() kann man verwenden oder nicht. Es macht keinen Unterschied"
+},
+"correctAnswer": "B",
+"explanation": "sc.close() wird verwendet, um den Scanner zu schließen und die verwendeten Ressourcen freizugeben. \nDadurch wird die Verbindung zur Eingabequelle sauber beendet."
+},
+{
+"id": 107,
+"question": "Was ist eine Variable in Java?",
+"options": {
+"A": "ein vollständiges Programm",
+"B": "ein Speicherplatz für einen Wert",
+"C": "eine Schleife zur Wiederholung von Code",
+"D": "eine Methode zur Ausführung von Befehlen"
+},
+"correctAnswer": "B",
+"explanation": "Eine Variable ist ein benannter Speicherplatz im Programm, in dem Werte gespeichert werden können. Diese Werte können sich im Verlauf des Programms ändern."
+},
+{
+"id": 108,
+"question": "Was ist der Unterschied zwischen Deklaration und Initialisierung?",
+"options": {
+"A": "beides ist dasselbe",
+"B": "Deklaration = Variable wird erstellt, Initialisierung = Variable bekommt einen Wert",
+"C": "Initialisierung = Variable wird gelöscht",
+"D": "Deklaration = Ausgabe eines Werts im Programm"
+},
+"correctAnswer": "B",
+"explanation": "Bei der Deklaration wird eine Variable erstellt, ohne einen Wert zuzuweisen. Bei der Initialisierung erhält die Variable erstmals einen Wert."
+},
+{
+"id": 109,
+"question": "Was bedeutet der Zuweisungsoperator = in Java?",
+"options": {
+"A": "Vergleich von zwei Werten, die in der Variable ausgegeben werden",
+"B": "Speicherung eines Wertes in einer Variable",
+"C": "Wiederholung von Code (Schleife)",
+"D": "Der Zuweisungsoperator verweist auf die Methode"
+},
+"correctAnswer": "B",
+"explanation": "Der Operator = weist einer Variable einen Wert zu. Der Wert auf der rechten Seite wird in der Variable auf der linken Seite gespeichert."
+},
+{
+"id": 110,
+"question": "Warum sind = und == in Java unterschiedlich?",
+"options": {
+"A": "= weist einen Wert zu, == vergleicht zwei Werte",
+"B": "== weist einen Wert zu, = vergleicht zwei Werte",
+"C": "Beide werden nur zum Vergleichen verwendet",
+"D": "== zeigt das Ergebnis einer Rechenoperation an, = vergleicht zwei Werte"
+},
+"correctAnswer": "A",
+"explanation": "Der Operator = wird zur Zuweisung von Werten verwendet, während == zwei Werte miteinander vergleicht."
+},
+{
+"id": 111,
+"question": "Welche Aussage beschreibt einen Datentyp am besten?",
+"options": {
+"A": "Er bestimmt, wie ein Programm startet",
+"B": "Er legt fest, welche Art von Wert eine Variable speichern kann",
+"C": "Er ist eine Methode zur Ausgabe von Text",
+"D": "Er speichert automatisch alle Eingaben"
+},
+"correctAnswer": "B",
+"explanation": "Ein Datentyp legt fest, welche Art von Daten eine Variable speichern darf, z. B. Zahlen, Texte oder Wahrheitswerte."
+},
+{
+"id": 112,
+"question": "Wofür braucht man ein Semikolon (;) in Java?",
+"options": {
+"A": "zum Start des Befehls",
+"B": "als Ende einer Anweisung",
+"C": "als Abschluss der Klasse",
+"D": "um Variablen sauber zu beenden"
+},
+"correctAnswer": "B",
+"explanation": "Das Semikolon beendet in Java eine Anweisung. Ohne Semikolon entsteht ein Syntaxfehler, da Java nicht erkennt, wo ein Befehl endet."
+},
+{
+"id": 113,
+"question": "Welches aus der folgenden Auswahl kann eine Bedingung in einer Schleife sein?",
+"options": {
+"A": "i = 10",
+"B": "i < 10",
+"C": "System.out.println(i)",
+"D": "int i"
+},
+"correctAnswer": "B",
+"explanation": "Eine Schleifenbedingung muss einen Wahrheitswert liefern (true oder false).\ni < 10 erfüllt diese Bedingung und kann daher in Schleifen verwendet werden.\nA:\ni = 10 falsch: das ist eine Zuweisung, keine Bedingung. Der Wert 10 wird der Variable i zugewiesen. Das ergibt keinen Wahrheitswert."
+},
+{
+"id": 114,
+"question": "Wie ist eine Deklaration aufgebaut?",
+"options": {
+"A": "Datentyp + Variablenname + Wert",
+"B": "Variablenname = Datentyp + Wert",
+"C": "Datentyp + Variablenname",
+"D": "Wert + Variablenname + Datentyp"
+},
+"correctAnswer": "C",
+"explanation": "Eine Deklaration besteht aus Datentyp und Variablenname. Dabei wird die Variable erstellt, aber noch kein Wert zugewiesen."
+},
+{
+"id": 115,
+"question": "Wie werden die Indizes in einem Array festgelegt?",
+"options": {
+"A": "Der Programmierer vergibt sie selbst im Code",
+"B": "Sie werden bei der Eintragung von Daten erzeugt",
+"C": "Sie stehen in den geschweiften Klammern {}",
+"D": "Java vergibt sie automatisch in der Reihenfolge der Werte ab 0"
+},
+"correctAnswer": "D",
+"explanation": "In Java werden Array-Indizes automatisch vergeben. Der erste Wert hat den Index 0, der \nzweite den Index 1 usw."
+},
+{
+"id": 116,
+"question": "Was ist eine ArrayList in Java?",
+"options": {
+"A": "ein festes Array",
+"B": "eine dynamische Liste von Elementen",
+"C": "ein Array, das sich wiederholen kann",
+"D": "eine Auflistung aller verwendbaren Arrays"
+},
+"correctAnswer": "B",
+"explanation": "Eine ArrayList ist eine dynamische Liste, die ihre Größe automatisch anpassen kann. Sie kann wachsen oder schrumpfen, je nach Anzahl der gespeicherten Elemente."
+},
+{
+"id": 117,
+"question": "Welchen Import benötigt man für eine ArrayList?",
+"options": {
+"A": "import java.util.ArrayList;",
+"B": "import java.lang.ArrayList;",
+"C": "import java.array.ArrayList;",
+"D": "kein Import nötig"
+},
+"correctAnswer": "A",
+"explanation": "Die ArrayList gehört zum Paket java.util. Ohne diesen Import funktioniert sie nicht. \nimport java.util.ArrayList;"
+},
+{
+"id": 118,
+"question": "Wie erstellt man eine leere ArrayList für Strings in Java?",
+"options": {
+"A": "ArrayList<String> liste = new ArrayList<>();",
+"B": "ArrayList liste = new String();",
+"C": "String[] liste = new ArrayList();",
+"D": "ArrayList<String> liste;"
+},
+"correctAnswer": "A",
+"explanation": "Eine ArrayList ist eine dynamische Liste in Java, die mehrere Werte speichern kann und ihre Größe flexibel anpasst. \nUm eine leere ArrayList für Strings zu erstellen, braucht man zwei Dinge: den Datentyp in spitzen Klammern (<String>) → legt \nfest, was gespeichert wird und das Schlüsselwort new → erstellt das Objekt im Speicher. Hier passiert: \nArrayList<String> → Liste speichert nur Texte (Strings), liste → Name der Liste, new ArrayList<>() → erzeugt eine neue, \nleere Liste. Wichtig: Die spitzen Klammern sorgen dafür, dass nur Strings in die Liste eingefügt werden können."
+},
+{
+"id": 119,
+"question": "Wie fügt man ein Element in eine ArrayList ein?",
+"options": {
+"A": "liste.add(\"Hallo\");",
+"B": "liste.insert(\"Hallo\");",
+"C": "liste.put(\"Hallo\");",
+"D": "liste = \"Hallo\";"
+},
+"correctAnswer": "A",
+"explanation": "In Java werden Elemente zu einer ArrayList mit der Methode add() hinzugefügt. Diese Methode hängt den neuen Wert am Ende der \nListe an. Eine ArrayList ist dynamisch, das bedeutet: Sie kann während der Laufzeit wachsen, wenn neue Elemente hinzugefügt werden. \nArrayList<String> liste = new ArrayList<>(); \nliste.add(\"Hallo\"); \nliste.add(\"Welt\"); \nZuerst wird eine leere Liste erstellt. Dann wird \"Hallo\" als erstes Element eingefügt. Danach \nwird \"Welt\" als weiteres Element ergänzt. \nWichtig: add() fügt immer ein neues Element in die Liste ein, ohne dass bestehende Werte überschrieben werden."
+},
+{
+"id": 120,
+"question": "Wie greift man auf ein Element in einer ArrayList zu?",
+"options": {
+"A": "liste[0]",
+"B": "liste.get(0)",
+"C": "liste(0)",
+"D": "liste.value(0)"
+},
+"correctAnswer": "B",
+"explanation": "In Java greift man bei einer ArrayList nicht mit eckigen Klammern zu, sondern über die Methode get(). \nDiese Methode gibt das Element an einer bestimmten Position (Index) zurück. Der Index \nbeginnt immer bei 0, das heißt: \n0 = erstes Element, \n1 = zweites Element, \n2 = drittes Element \nusw. \nArrayList<String> liste = new ArrayList<>(); \nliste.add(\"Hallo\"); \nliste.add(\"Welt\"); \nString wert = liste.get(0); \nHier wird \"Hallo\" aus der Liste geholt, weil es an Position 0 steht. \nWichtig: Bei ArrayList verwendet man immer .get(index), nicht [] wie bei normalen \nArrays."
+},
+{
+"id": 121,
+"question": "Wie viele Datentypen kann eine ArrayList in Java speichern?",
+"options": {
+"A": "beliebig viele verschiedene Datentypen gleichzeitig",
+"B": "nur einen festgelegten Datentyp",
+"C": "nur Zahlenwerte (z. B. int oder double)",
+"D": "nur Textwerte (Strings)"
+},
+"correctAnswer": "B",
+"explanation": "Eine ArrayList ist in Java typisiert, das bedeutet: \nSie ist so aufgebaut, dass sie nur einen bestimmten Datentyp speichern darf. Dieser Datentyp wird beim Erstellen der Liste \nfestgelegt, zum Beispiel mit <String> oder <Integer>. \nWichtig: Durch diese feste Typisierung verhindert Java Fehler im Code, \nweil keine gemischten Datentypen erlaubt sind."
+},
+{
+"id": 122,
+"question": "Was ist der Unterschied zwischen Array und ArrayList?",
+"options": {
+"A": "Es gibt keinen Unterschied",
+"B": "ArrayList ist immer schneller als ein Array",
+"C": "Ein Array hat eine feste Größe, eine ArrayList ist flexibel",
+"D": "Eine ArrayList kann nur Zahlen speichern"
+},
+"correctAnswer": "C",
+"explanation": "Der wichtigste Unterschied zwischen einem Array und einer ArrayList ist die Größe der \nDatenstruktur. Ein Array hat eine feste Größe, die beim Erstellen festgelegt wird. Diese Größe kann später nicht mehr verändert werden. \nEine ArrayList ist dagegen dynamisch, das heißt, sie kann während der Laufzeit wachsen oder schrumpfen. Arrays sind statisch \n(feste Größe), ArrayLists sind flexibel (veränderbare Größe)."
+},
+{
+"id": 123,
+"question": "Wie entfernt man ein Element aus einer ArrayList?",
+"options": {
+"A": "liste.delete(0);",
+"B": "liste.remove(0);",
+"C": "liste.clear(0);",
+"D": "liste.new(0);"
+},
+"correctAnswer": "B",
+"explanation": "Eine ArrayList ist eine dynamische Liste aus dem Paket java.util. \nAnders als ein normales Array kann sie ihre Größe verändern und bietet Methoden zum Hinzufügen, Entfernen und \nVerwalten von Elementen. Um ein Element aus einer ArrayList zu löschen, verwendet man \ndie Methode remove(). Diese Methode kann entweder einen Index oder ein Objekt als Parameter bekommen. \nWenn ein Index übergeben wird, wird das Element an dieser Position entfernt. \nimport java.util.ArrayList; \nArrayList<String> liste = new ArrayList<>(); \nliste.add(\"Apfel\"); \nliste.add(\"Banane\"); \nliste.add(\"Orange\"); \nliste.remove(0); \n// entfernt \"Apfel\" Nach dem Aufruf von remove(0) \nwird das erste Element gelöscht. Alle nachfolgenden Elemente rücken automatisch eine Position nach vorne."
+},
+{
+"id": 124,
+"question": "Muss man eine ArrayList in Java schließen, so wie man einen Scanner schließen sollte?",
+"options": {
+"A": "Ja, eine ArrayList sollte nach der Verwendung immer geschlossen werden.",
+"B": "Nein, eine ArrayList muss nicht geschlossen werden.",
+"C": "Nur wenn während der Nutzung Fehler auftreten, sollte sie geschlossen werden.",
+"D": "Nur bei sehr großen Listen sollte man sie am Ende schließen."
+},
+"correctAnswer": "B",
+"explanation": "Eine ArrayList muss in Java nicht geschlossen werden. Sie ist eine normale Datenstruktur\nim Arbeitsspeicher und verwendet keine externen Ressourcen wie Dateien oder Netzwerkverbindungen. Die Speicherverwaltung übernimmt \nautomatisch die Garbage Collection der Java Virtual Machine."
+},
+{
+"id": 125,
+"question": "Welche Datentypen kann eine ArrayList in Java speichern?",
+"options": {
+"A": "Nur primitive Datentypen wie int oder double",
+"B": "Nur Objekte wie zum Beispiel String oder Integer",
+"C": "Eine ArrayList kann jeden Datentypen speichern",
+"D": "Es handelt sich um eine Struktur die das Array verwaltet"
+},
+"correctAnswer": "B",
+"explanation": "Eine ArrayList kann in Java nur Objekte speichern. Primitive Datentypen \nwie int oder double sind keine Objekte. Deshalb verwendet man sogenannte Wrapper-Klassen wie Integer \noder Double, um diese Werte in Objekten zu speichern. Beispiel: \nArrayList<Integer> zahlen = new ArrayList<>(); \nzahlen.add(5); \nzahlen.add(10); \nzahlen.add(15);"
+},
+{
+"id": 126,
+"question": "Was versteht man in der Programmierung unter einer kopfgesteuerten Schleife?",
+"options": {
+"A": "Eine Schleife, die immer mindestens einmal ausgeführt wird",
+"B": "Eine Schleife, bei der die Bedingung vor jedem Durchlauf geprüft wird",
+"C": "Eine Schleife ohne Abbruchbedingung",
+"D": "Eine Schleife, die nur einmal ausgeführt wird"
+},
+"correctAnswer": "B",
+"explanation": "Eine kopfgesteuerte Schleife ist eine Schleife, bei der die Bedingung vor der Ausführung des \nSchleifenblocks geprüft wird. Nur wenn die Bedingung wahr ist, wird der Code im Inneren ausgeführt. /\nIst die Bedingung bereits zu Beginn falsch, wird die Schleife kein einziges Mal ausgeführt.\nTypische Beispiele in Java sind die while-Schleife und die for-Schleife."
+},
+{
+"id": 127,
+"question": "Was bedeutet „Zuweisung immer von rechts nach links“?",
+"options": {
+"A": "Der Wert links wird nach rechts kopiert",
+"B": "Beide Seiten müssen gleich sein",
+"C": "Der Wert auf der rechten Seite wird der linken Variablen zugewiesen",
+"D": "Der Compiler interpretiert alle Zeilen von rechts nach links"
+},
+"correctAnswer": "C",
+"explanation": "Bei einer Zuweisung in Java wird immer zuerst der Ausdruck auf der rechten Seite ausgewertet \nund das Ergebnis anschließend der Variablen auf der linken Seite zugewiesen. Das bedeutet, die „Richtung“ der \nZuweisung geht von rechts nach links. Ein Beispiel ist \nint x = 5; – \nhier wird der Wert 5 der Variablen x zugewiesen. Auch bei komplexeren Ausdrücken wie \nx = y + 3; \nwird zuerst y + 3 berechnet und danach das Ergebnis in x gespeichert. Wichtig ist dabei, dass links immer eine Variable stehen muss, \ndie den Wert aufnehmen kann.\n "
+},
+{
+"id": 128,
+"question": "Woran erkennt man UpperCamelCase?",
+"options": {
+"A": "Alle Wörter sind klein geschrieben",
+"B": "Wörter sind durch Unterstriche getrennt",
+"C": "Jedes Wort beginnt mit einem Großbuchstaben, auch das erste",
+"D": "Nur das letzte Wort ist groß"
+},
+"correctAnswer": "C",
+"explanation": "UpperCamelCase (auch PascalCase genannt) erkennt man daran, dass jedes Wort eines zusammengesetzten Namens mit einem Großbuchstaben beginnt – auch das erste. \nBeispiele sind Auto, BenutzerName oder KontoDaten. Dadurch lassen sich einzelne Wörter leichter erkennen und der Name wird besser lesbar als z. B. „benutzername“ oder „benutzer_name“."
+},
+{
+"id": 129,
+"question": "Welches aus der folgenden Auswahl ist PascalCase?",
+"options": {
+"A": "benutzerName",
+"B": "Benutzername",
+"C": "benutzer_name",
+"D": "BENUTZERNAME"
+},
+"correctAnswer": "B",
+"explanation": "PascalCase (UpperCamelCase) bedeutet, dass jedes Wort – einschließlich des ersten – mit einem \nGroßbuchstaben beginnt. „Benutzername“ erfüllt diese Regel. „benutzerName“ ist hingegen lowerCamelCase, „benutzer_name“ nutzt \nUnterstriche und „BENUTZERNAME“ ist komplett groß geschrieben und entspricht keiner CamelCase-Konvention."
+},
+{
+"id": 130,
+"question": "Wann wird UpperCamelCase meist angewandt?",
+"options": {
+"A": "Bei Variablen",
+"B": "Bei Methoden",
+"C": "Bei Klassennamen",
+"D": "Bei Kommentaren"
+},
+"correctAnswer": "C",
+"explanation": "UpperCamelCase wird in Java typischerweise für Klassennamen \nverwendet, z. B. Auto, BenutzerKonto oder RechnungSystem. Variablen und Methoden werden dagegen meist in \nlowerCamelCase geschrieben (z. B. berechneSumme). Diese einheitlichen Schreibweisen helfen dabei, verschiedene Elemente im \nCode sofort zu unterscheiden und verbessern die Lesbarkeit."
+}
+]
